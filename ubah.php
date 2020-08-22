@@ -35,22 +35,22 @@
         <li>
           <label for="nama_produk"> Nama produk : </label>
           <input type="text" name="nama_produk" id="nama_produk"
-          value="<?= $prdk["nama"]; ?>">
+          value="<?= $prdk["nama_produk"]; ?>">
         </li>
         <li>
           <label for="keterangan"> Keterangan : </label>
           <input type="text" name="keterangan" id="keterangan"
-          value="<?= $prdk["nim"]; ?>">
+          value="<?= $prdk["keterangan"]; ?>">
         </li>
         <li>
           <label for="harga"> haraga : </label>
           <input type="text" name="harga" id="harga"
-          value="<?= $prdk["jurusan"]; ?>">
+          value="<?= $prdk["harga"]; ?>">
         </li>
         <li>
           <label for="jumlah"> Jumlah : </label>
           <input type="text" name="jumlah" id="jumlah"
-          value="<?= $prdk["email"]; ?>">
+          value="<?= $prdk["jumlah"]; ?>">
         </li>
         <li>
           <button type="submit" name="submit">ubah Data</button>
