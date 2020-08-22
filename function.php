@@ -44,7 +44,7 @@ function ubah($data){
             nama_produk = '$nama_produk',
             keterangan = '$keterangan',
             harga = '$harga',
-            jumlah = '$jumlah',
+            jumlah = '$jumlah'
             WHERE id = $id
             ";
   mysqli_query($conn, $query);
