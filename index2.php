@@ -26,19 +26,21 @@ $produk = query("SELECT * FROM produk ");
 
      <h1><p style="text-align: center;"> Data Produk</p></h1>
 
-    <a class="btn btn-primary" href="tambah.php">Tambah Data Produk</a>
+   
+  <div class="container" >
+  <nav class="navbar navbar-light bg-light justify-content-between">
+      <a class="btn btn-primary" href="tambah.php">Tambah Data Produk</a>
       <br>
       <br>
+      <form action="" method="post" class="form-inline">
       
-      <form action="" method="post">
-      
-        <input type="text" name="keyword" size="40" autofocus="" placeholder="Cari Disini" autocomplete="off">
-        <button type="submit" name="cari" >Cari</button>
+        <input class="form-control mr-sm-3 w-auto" type="text" name="keyword"  autofocus="" placeholder="Cari Disini" autocomplete="off" >
+        <button type="submit" class="btn btn-primary my-2 my-sm-0" name="cari" >Cari</button>
         
       </form>
-
+  </nav>
       <br>
-      <div class="container"><div class="table-responsive">
+      <div class="table-responsive">
     <table class="table table-sm table-dark" border="1" cellpadding="10" cellspacing="0">
         <tr>
           <th scope="col">No.</th>
@@ -68,7 +70,8 @@ $produk = query("SELECT * FROM produk ");
         <?php $i++ ?>
       <?php endforeach; ?>
     </table>
-  </div></div>
+    </div>
+  </div>
     
   </body>
 </html>
