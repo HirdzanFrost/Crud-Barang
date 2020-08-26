@@ -1,12 +1,20 @@
 <?php
 
   require 'function.php';
+    //cek apakah tombol submit sudah ditekan//
     if (isset($_POST["submit"]))
+    //tambah data//
     if (tambah($_POST) > 0 )
-      echo "Berhasil";
+        //tambah data berhasila atau tidak//
+    echo "<script>
+    alert('Data Berhasil ditambah');
+    document.location.href = 'index2.php';
+    </script>";
     else {
-      echo "Gagal";
-      echo "<br>";
+      echo "<script>
+      alert('Data Berhasil tidak berhasil ditambah');
+    </script>";      
+
     } ?>
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
@@ -22,19 +30,19 @@
     <form action="" method="post">
       <ul>
         <li>
-          <label for="nama_produk"> Nama : </label>
+          <label for="nama_produk"> Nama Produk: </label>
           <input type="text" name="nama_produk" id="nama_produk">
         </li>
         <li>
-          <label for="keterangan"> NIM : </label>
+          <label for="keterangan"> Keterangan : </label>
           <input type="text" name="keterangan" id="keterangan">
         </li>
         <li>
-          <label for="harga"> Jurusan : </label>
+          <label for="harga"> Harga : </label>
           <input type="text" name="harga" id="harga">
         </li>
         <li>
-          <label for="jumlah"> Email : </label>
+          <label for="jumlah"> Jumlah : </label>
           <input type="text" name="jumlah" id="jumlah">
         </li>
 
